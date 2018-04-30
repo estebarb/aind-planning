@@ -28,7 +28,16 @@
 \index_command default
 \paperfontsize 12
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry false
 \use_package amsmath 1
@@ -79,11 +88,210 @@ Historical Developments in the Field of AI Planning and Search
 Esteban Rodríguez Betancourt
 \end_layout
 
+\begin_layout Section
+Stanford Research Institute Problem Solver (STRIPS)
+\end_layout
+
+\begin_layout Standard
+STRIPS marked a first milestone in AI planning as the first major planning
+ system
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel"
+
+\end_inset
+
+.
+ It was initially implemented in LISP and was used also for robot research
+ at Stanford Research Institute
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fikes1971"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+STRIPS models the world using a language of statements that correspond to
+ first-order predicate calculus
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fikes1971"
+
+\end_inset
+
+.
+ Such representation marked one of the contributios of STRIPS: a well defined
+ and useful language for representing planning problems
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As for the search strategy, STRIPS used 
+\begin_inset Quotes eld
+\end_inset
+
+existing therorem -proving programs to answer questions about the model
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "p. 191"
+key "Fikes1971"
+
+\end_inset
+
+.
+ They based their search strategy on General Problem Solver (GPS) and QA3
+ theorem proving system
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fikes1971,Russel"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Over the STRIPS work, Bylander demostrated that a STRIPS planning problem
+ belongs to PSPACE-complete
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel"
+
+\end_inset
+
+.
+ Also, other modeling languages surged, that augmented STRIPS, like Action
+ Description Language (ADL) and Problem Doman Description Language (PDDL)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Subplan interleaving
+\end_layout
+
+\begin_layout Standard
+Early planners usually used an approach named linear planning: there the
+ subplans for each goal are just concatenated.
+ Such approach can't handle some problems, like the Sussman anomaly
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+WARPLAN was one planner that introduces 
+\begin_inset Quotes eld
+\end_inset
+
+goal regression planning
+\begin_inset Quotes erd
+\end_inset
+
+, that reorders steps to avoid conflicts between subgoals, and allows to
+ interleave subplans
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel"
+
+\end_inset
+
+.
+ INTERPLAN was other planner that uses interleaving
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+WARPLAN also was the first planner written in a logic programming language:
+ Prolog.
+ It was only 100 LOC, in contrast to existing planners
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+SATplan
+\end_layout
+
+\begin_layout Standard
+SATplan 
+\begin_inset Quotes eld
+\end_inset
+
+rewords
+\begin_inset Quotes erd
+\end_inset
+
+ the planning problem as a satisfiability problem.
+ It converts the planning problem to conjunctive normal form (CNF) and then
+ tries to demostrate the axioms and goals at some future time horizon.
+ If it wasn't able to demostrate it then it expands the horizon
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel,Pirrone2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Once converted to CNF then any SAT could be used to demostrate the theorem.
+ Usually those SATs are based on DPLL algorithm or WalkSAT
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Russel,Pirrone2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Expressing this kind of problems as satisfiability problems makes them as
+ a sort of dual problem of automatic theorem proving and also Prolog execution,
+ which was used to implement WARPLAN.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "biblio"
-options "alpha"
+options "plain"
 
 \end_inset
 
