@@ -1,0 +1,11155 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+\usepackage{multicol}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "libertine" "default"
+\font_sans "default" "default"
+\font_typewriter "beramono" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 75 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Heuristic Analysis: Air Cargo Planning
+\end_layout
+
+\begin_layout Author
+Esteban Rodríguez Betancourt
+\end_layout
+
+\begin_layout Section
+Air Cargo Problem 1
+\end_layout
+
+\begin_layout Standard
+The search results metrics for Air Cargo Problem 1 are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:ACP1"
+
+\end_inset
+
+.
+ The some of the plans generated are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Plan1"
+
+\end_inset
+
+.
+ The outputs of all the search algorithms are in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Outputs1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="6">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Search Algorithm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Expansions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Goal Tests
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+New Nodes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plan length
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time Elapsed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breadth First
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+180
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.044s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breadth First Tree
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1458
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1459
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5960
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.399s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth First Graph
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+84
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.021s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth Limited Search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+101
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+271
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+414
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.127s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uniform Cost Search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+57
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+224
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.054s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recursive Best First Search with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4229
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4230
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17023
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.975s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greedy Best First Graph Search with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.007s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+57
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+224
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.053s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H ignore preconditions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+43
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+170
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.055s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H PG levelsum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.195s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Air Cargo Problem 1
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:ACP1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="middle" width="4cm">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Search Algorithm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Optimal?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breadth First
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C1, P1, JFK)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth First Graph
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C1, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C1, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P1, SFO)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greedy Best First Graph Search with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P2, SFO)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P2, SFO)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Air Cargo Problem 1 Plans
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Plan1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Air Cargo Problem 2
+\end_layout
+
+\begin_layout Standard
+The search results metrics for Air Cargo Problem 2 are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:ACP2"
+
+\end_inset
+
+.
+ The some of the plans generated are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Plan2"
+
+\end_inset
+
+.
+ The outputs of all the search algorithms are in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Outputs2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="6">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Search Algorithm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Expansions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Goal Tests
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+New Nodes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plan length
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time Elapsed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breadth First
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3343
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4609
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30509
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.624s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breadth First Tree
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>10m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth First Graph
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+624
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+625
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5602
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+619
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.296s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth Limited Search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>10m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uniform Cost Search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4853
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4855
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+44041
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.794s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recursive Best First Search with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>10m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greedy Best First Graph Search with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+998
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8982
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.393s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4853
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4855
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+44041
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.951s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H ignore preconditions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1450
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1452
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13303
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.118s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H PG levelsum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>10m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Air Cargo Problem 2
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:ACP2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features islongtable="true" firstHeadBottomDL="true" headBottomDL="true" longtabularalignment="center">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="4cm">
+<column alignment="center" valignment="top" width="0pt">
+<row endhead="true" endfirsthead="true">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Search Algorithm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Optimal?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breadth First
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C3, P3, SFO)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth First Graph
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plan length is 619 steps.
+ See 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "subsec:ap2-Depth-First-Graph"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greedy Best First Graph Search with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C3, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P3, SFO)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Load(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C3, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+Unload(C1, P1, JFK)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Air Cargo Problem 2 Plans
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Plan2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Air Cargo Problem 3
+\end_layout
+
+\begin_layout Standard
+The search results metrics for Air Cargo Problem 3 are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:ACP3"
+
+\end_inset
+
+.
+ The some of the plans generated are shown in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "tab:Plan3"
+
+\end_inset
+
+.
+ The outputs of all the search algorithms are in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Outputs3"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="6">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Search Algorithm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Expansions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Goal Tests
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+New Nodes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plan length
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time Elapsed
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breadth First
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14663
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18098
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+129631
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+58.170s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breadth First Tree
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>10m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth First Graph
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+408
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+409
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3364
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+392
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.630s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth Limited Search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>10m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uniform Cost Search
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18223
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18225
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+159618
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72.813s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Recursive Best First Search with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>10m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greedy Best First Graph Search with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5578
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5580
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+49150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22.549s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18223
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18225
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+159618
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72.326s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H ignore preconditions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5040
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5042
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+44944
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.146s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H PG levelsum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>10m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Air Cargo Problem 3
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:ACP3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="middle" width="4cm">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Search Algorithm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Optimal?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Breadth First
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Load(C1, P1, SFO) Load(C2, P2, JFK) Fly(P2, JFK, ORD) Load(C4, P2, ORD)
+ Fly(P1, SFO, ATL) Load(C3, P1, ATL) Fly(P1, ATL, JFK) Unload(C1, P1, JFK)
+ Unload(C3, P1, JFK) Fly(P2, ORD, SFO) Unload(C2, P2, SFO) Unload(C4, P2,
+ SFO)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Depth First Graph
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plan length is 392 steps.
+ See 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "subsec:ap3-Depth-First-Graph"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greedy Best First Graph Search with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Load(C1, P1, SFO) Load(C2, P2, JFK) Fly(P1, SFO, ORD) Load(C4, P1, ORD)
+ Fly(P2, JFK, ATL) Load(C3, P2, ATL) Fly(P2, ATL, ORD) Fly(P1, ORD, ATL)
+ Unload(C4, P1, ATL) Fly(P1, ATL, ORD) Fly(P2, ORD, ATL) Load(C4, P2, ATL)
+ Fly(P2, ATL, ORD) Unload(C3, P2, ORD) Load(C3, P1, ORD) Fly(P1, ORD, JFK)
+ Unload(C3, P1, JFK) Unload(C1, P1, JFK) Fly(P1, JFK, ORD) Fly(P2, ORD,
+ SFO) Unload(C4, P2, SFO) Unload(C2, P2, SFO)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A* with H1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Load(C2, P2, JFK)
+Fly(P1, SFO, ATL)
+Load(C3, P1, ATL)
+Fly(P2, JFK, ORD)
+Load(C4,
+ P2, ORD)
+Fly(P2, ORD, SFO)
+Fly(P1, ATL, JFK)
+Unload(C4, P2, SFO)
+Unload(C3,
+ P1, JFK)
+Unload(C2, P2, SFO)
+Unload(C1, P1, JFK)
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Air Cargo Problem 3 Plans
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Plan3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Analysis
+\end_layout
+
+\begin_layout Subsection
+Non Heuristic
+\end_layout
+
+\begin_layout Standard
+Of the non heuristic algorithms 
+\emph on
+Breadth First
+\emph default
+ and 
+\emph on
+Uniform Cost
+\emph default
+ were able to always find an optimal plan.
+ Both takes more time than 
+\emph on
+Depth First
+\emph default
+ or 
+\emph on
+Greedy Best First Graph
+\emph default
+, but the plans generated are shorter.
+ 
+\emph on
+Breadth First
+\emph default
+ and 
+\emph on
+Uniform Cost
+\emph default
+ explore shorter plans first, so it helps to keep the generated plans smaller.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Depth First
+\emph default
+ and 
+\emph on
+Greedy Best First Graph
+\emph default
+ are among the fastests algorithms evaluated, but generated plans almost
+ one or two orders of magnitude longers than the optimal.
+ 
+\emph on
+Depth First
+\emph default
+ and 
+\emph on
+Greedy Best First Graph
+\emph default
+ tend to do the least expansions, that explains why are so fast.
+\end_layout
+
+\begin_layout Standard
+Depending on what we are trying to optimize one algorithm could be better
+ than the other one.
+ If we want the best plan then 
+\emph on
+Breadth First
+\emph default
+ or 
+\emph on
+Uniform Cost
+\emph default
+ are our best option, but if we want to have a plan quickly, any plan, then
+ 
+\emph on
+Depth First
+\emph default
+ or 
+\emph on
+Greedy Best First Graph
+\emph default
+ could be a better option.
+\end_layout
+
+\begin_layout Standard
+But that depends on the nature of the problem to solve.
+ If the tree of options have a lot of depth branches that are dead ends
+ towards our goal then 
+\emph on
+Depth First
+\emph default
+ would require more time than 
+\emph on
+Breadth First
+\emph default
+, for example.
+ In this cases it would be better to benchmark our algorithms against our
+ new data/problem, or maybe consider an informed search algorithm, like
+ A*.
+\end_layout
+
+\begin_layout Subsection
+Heuristic
+\end_layout
+
+\begin_layout Standard
+A* is more complex than non-heuristic algorithms, but have the advantage
+ that explore the steps space smarter, given a 
+\begin_inset Quotes eld
+\end_inset
+
+distance
+\begin_inset Quotes erd
+\end_inset
+
+ function.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+H PG levelsum
+\emph default
+ was too complex for the task, it performed poorly and it didn't even finished
+ in the 10 minutes allocated per run in the last two problems.
+ In the first one it was more than 2 orders of magnitude slower than the
+ other A* algorithms.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+A* ignoring preconditions 
+\emph default
+performed in general better than 
+\emph on
+H1
+\emph default
+: it had less expansions, new nodes and goal tests.
+ Also, tend to perform faster than H1.
+\end_layout
+
+\begin_layout Standard
+Given that we actually have a function to measure our distance towards the
+ goal then A* seems a better option than non-heuristic algorithms for search.
+ If we are programming an unknown scenario, when we can't tip A* regarding
+ the distance to goal, then 
+\emph on
+Breadth First
+\emph default
+ or 
+\emph on
+Uniform Cost
+\emph default
+ could be a better option, at least during the exploratory phase of our
+ problem.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+appendix
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Run search outputs
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Air Cargo Problem 1 outputs
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Outputs1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ for s in {1..10}; do python run_search.py -s $s -p 1 ; done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Breath First Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using breadth_first_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+    43          56         180    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 6  Time elapsed in seconds: 0.04448499000136508
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Breath First Tree Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using breadth_first_tree_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   1458        1459        5960   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 6  Time elapsed in seconds: 1.3990620490003494
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Depth First Graph Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using depth_first_graph_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+    21          22          84    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 20  Time elapsed in seconds: 0.02115705000323942
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P1, SFO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Depth Limited Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using depth_limited_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   101         271         414    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 50  Time elapsed in seconds: 0.1274095730004774
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Uniform Cost Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using uniform_cost_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+    55          57         224    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 6  Time elapsed in seconds: 0.05396067100082291
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Recursive Best First Search with H1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using recursive_best_first_search with h_1...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   4229        4230       17023   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 6  Time elapsed in seconds: 3.9745941549990675
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Greedy Best First Graph Search with H1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using greedy_best_first_graph_search with h_1...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+    7           9           28    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 6  Time elapsed in seconds: 0.007396945002255961
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A* with H1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using astar_search with h_1...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+    55          57         224    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 6  Time elapsed in seconds: 0.05333613200127729
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A* with H ignore preconditions
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using astar_search with h_ignore_preconditions...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+    41          43         170    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 6  Time elapsed in seconds: 0.05460188500001095
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A* with H PG levelsum
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 1 using astar_search with h_pg_levelsum...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+    11          13          50    
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 6  Time elapsed in seconds: 16.194907643002807
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Air Cargo Problem 2
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Outputs2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ for s in {1..10}; do time timeout 10m python run_search.py -s $s -p 2 ; done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Breath First Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using breadth_first_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   3343        4609       30509   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 9  Time elapsed in seconds: 11.624176827001065
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m11,741s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m11,697s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,021s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Breath First Tree Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using breadth_first_tree_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	10m0,034s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	9m57,763s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m1,155s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Depth First Graph Search
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:ap2-Depth-First-Graph"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using depth_first_graph_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   624         625         5602   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 619  Time elapsed in seconds: 5.29603099799715
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P3, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m5,408s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m5,388s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,012s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Depth Limited Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using depth_limited_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	10m0,004s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	9m59,298s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,059s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Uniform Cost Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using uniform_cost_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   4853        4855       44041   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 9  Time elapsed in seconds: 16.79425300299772
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m16,902s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m16,865s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,018s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Recursive Best First Search with H1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using recursive_best_first_search with h_1...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	10m0,004s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	9m59,257s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,132s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Greedy Best First Graph Search with H1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using greedy_best_first_graph_search with h_1...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   998         1000        8982   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 15  Time elapsed in seconds: 3.3934196189984505
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m3,499s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m3,487s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,008s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A* with H1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using astar_search with h_1...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   4853        4855       44041   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 9  Time elapsed in seconds: 16.951273193997622
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m17,058s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m17,016s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,025s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A* with H ignore preconditions
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using astar_search with h_ignore_preconditions...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   1450        1452       13303   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 9  Time elapsed in seconds: 6.118248686001607
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P3, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P3, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P3, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m6,244s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m6,195s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,040s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A* with H PG levelsum
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 2 using astar_search with h_pg_levelsum...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	10m0,007s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	9m59,211s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,380s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Air Cargo Problem 3
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Outputs3"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ for s in {1..10}; do time timeout 10m python run_search.py -s $s -p 3 ; done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Breath First Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using breadth_first_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+  14663       18098       129631  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 12  Time elapsed in seconds: 58.169580712001334
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P2, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m58,278s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m57,794s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,236s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Breath First Tree Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using breadth_first_tree_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	10m0,032s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	9m57,923s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m1,244s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Depth First Graph Search
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:ap3-Depth-First-Graph"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using depth_first_graph_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   408         409         3364   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 392  Time elapsed in seconds: 2.63039746800132
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P2, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m2,746s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m2,728s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,015s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Depth Limited Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using depth_limited_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	10m0,003s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	9m59,130s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,250s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Uniform Cost Search
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using uniform_cost_search...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+  18223       18225       159618  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 12  Time elapsed in seconds: 72.81308357099988
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P2, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	1m12,923s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	1m12,703s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,061s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Recursive Best First Search with H1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using recursive_best_first_search with h_1...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	10m0,003s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	9m58,234s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,671s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Greedy Best First Graph Search with H1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using greedy_best_first_graph_search with h_1...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   5578        5580       49150   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 22  Time elapsed in seconds: 22.548576019999018
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P1, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P2, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ATL, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P2, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ORD, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m22,654s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m22,617s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,016s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A* with H1
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using astar_search with h_1...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+  18223       18225       159618  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 12  Time elapsed in seconds: 72.3259903420003
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P2, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	1m12,433s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	1m12,268s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,092s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A* with H ignore preconditions
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using astar_search with h_ignore_preconditions...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Expansions   Goal Tests   New Nodes
+\end_layout
+
+\begin_layout Plain Layout
+
+   5040        5042       44944   
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Plan length: 12  Time elapsed in seconds: 24.146244273000775
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C2, P2, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, JFK, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C4, P2, ORD)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P2, ORD, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C4, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C1, P1, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, SFO, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Load(C3, P1, ATL)
+\end_layout
+
+\begin_layout Plain Layout
+
+Fly(P1, ATL, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C3, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C2, P2, SFO)
+\end_layout
+
+\begin_layout Plain Layout
+
+Unload(C1, P1, JFK)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	0m24,312s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	0m23,949s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,233s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+A* with H PG levelsum
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "numbers=left,numberstyle={\tiny},basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Solving Air Cargo Problem 3 using astar_search with h_pg_levelsum...
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real	10m0,009s
+\end_layout
+
+\begin_layout Plain Layout
+
+user	9m58,737s
+\end_layout
+
+\begin_layout Plain Layout
+
+sys	0m0,662s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
